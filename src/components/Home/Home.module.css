@@ -1,0 +1,14 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.homeList {
+  display: flex;
+  gap: 20px;
+}
+
+.homeImage {
+  stroke: var(--background-black-color);
+}

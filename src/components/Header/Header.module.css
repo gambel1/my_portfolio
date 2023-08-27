@@ -1,0 +1,83 @@
+.header {
+  padding: 10px 0;
+  background-color: var(--background-black-color);
+}
+@media screen and (min-width: 768px /*от 480px и выше*/) {
+  .header {
+    padding: 20px 0;
+  }
+}
+@media screen and (min-width: 1200px /*от 480px и выше*/) {
+  .header {
+    padding: 30px 0;
+  }
+}
+
+.headerWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (min-width: 768px /*от 480px и выше*/) {
+  .headerWrap {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.headerLink {
+  font-family: var(--PermanentMarker);
+  line-height: normal;
+  color: var(--color-yellow);
+}
+.headerLink:hover {
+  color: red;
+}
+.headerLink:focus {
+  color: red;
+  outline: none;
+}
+.headerLink:active {
+  color: var(--color-active);
+}
+
+.headerButton {
+  border: none;
+  background-color: var(--background-black-color);
+}
+@media screen and (min-width: 768px /*от 480px и выше*/) {
+  .headerButton {
+    display: none;
+  }
+}
+
+/* navigations */
+.nav {
+  display: none;
+}
+@media screen and (min-width: 768px /*от 480px и выше*/) {
+  .nav {
+    display: flex;
+  }
+}
+
+.navList {
+  display: flex;
+  gap: 35px;
+}
+
+.navListItem {
+  font-family: var(--Poppins);
+  line-height: normal;
+  color: var(--color-white);
+}
+.navListItem:hover {
+  color: var(--color-yellow);
+}
+.navListItem:focus {
+  color: var(--color-yellow);
+  outline: none;
+}
+.navListItem:active {
+  color: var(--color-active);
+}
