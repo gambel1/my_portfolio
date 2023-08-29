@@ -5,7 +5,7 @@ import css from "../Header/Header.module.css";
 export default function Header() {
   return (
     <header className={css.header}>
-      {/* <div className="container"> */}
+      <div className="container">
         <div className={css.headerWrap}>
           <Link to={"/"} className={css.headerLink}>
             PORTFOLIO
@@ -40,7 +40,7 @@ export default function Header() {
             </ul>
           </nav>
         </div>
-      {/* </div> */}
+      </div>
     </header>
   );
 }

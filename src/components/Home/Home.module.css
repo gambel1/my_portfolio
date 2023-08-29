@@ -4,9 +4,45 @@
   align-items: center;
 }
 
+.homeTitle {
+  font-family: var(--PermanentMarker);
+  font-size: 36px;
+  font-weight: 400;
+  line-height: normal;
+
+  margin-bottom: 5px;
+  color: var(--color-yellow);
+}
+
+.homeSubtitle {
+  font-family: var(--Poppins);
+  font-size: 20px;
+  line-height: normal;
+
+  margin-bottom: 5px;
+  color: var(--color-white);
+}
+
 .homeList {
   display: flex;
   gap: 20px;
+}
+
+.homeLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.homeLink:hover {
+  background-color: var(--color-yellow);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.homeImageCurrent {
+  fill: var(--color-white);
 }
 
 .homeImage {
