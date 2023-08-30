@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  
 }
 
 .homeTitle {
@@ -25,7 +26,17 @@
 
 .homeList {
   display: flex;
-  gap: 20px;
+  gap: 10px;
+}
+@media screen and (min-width: 768px) {
+  .homeList {
+    gap: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .homeList {
+    gap: 20px;
+  }
 }
 
 .homeLink {
@@ -34,17 +45,13 @@
   align-items: center;
   width: 44px;
   height: 44px;
+
+  fill: grey;
+  stroke: grey;
   border-radius: 50%;
 }
 .homeLink:hover {
-  background-color: var(--color-yellow);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.homeImageCurrent {
   fill: var(--color-white);
-}
-
-.homeImage {
-  stroke: var(--background-black-color);
+  stroke: var(--color-white);
 }
