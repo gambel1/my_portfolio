@@ -1,14 +1,1 @@
-.main {
-  padding: 10px 0;
-  background-color: var(--background-black-color);
-}
-@media screen and (min-width: 768px /*от 480px и выше*/) {
-  .main {
-    padding: 20px 0;
-  }
-}
-@media screen and (min-width: 1200px /*от 480px и выше*/) {
-  .main {
-    padding: 30px 0;
-  }
-}
+

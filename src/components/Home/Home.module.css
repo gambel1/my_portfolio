@@ -1,11 +1,39 @@
 .home {
+  padding: 10px 0;
+  background-color: var(--background-black-color);
+}
+@media screen and (min-width: 768px) {
+  .home {
+    padding: 20px 0;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .home {
+    padding: 30px 0;
+  }
+}
+
+.homeWrap {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 }
 
-.homeTitle {
+.homeWrapItem {
+  font-family: var(--Poppins);
+  font-size: 12px;
+  line-height: normal;
+  position: absolute;
+  letter-spacing: 2.4px;
+
+  right: 0;
+  bottom: 50%;
+  transform: rotate(-90deg);
+  color: var(--color-white);
+}
+
+.homeWrapTitle {
   font-family: var(--PermanentMarker);
   font-size: 36px;
   font-weight: 400;
@@ -15,7 +43,7 @@
   color: var(--color-yellow);
 }
 
-.homeSubtitle {
+.homeWrapSubtitle {
   font-family: var(--Poppins);
   font-size: 20px;
   line-height: normal;
@@ -24,22 +52,22 @@
   color: var(--color-white);
 }
 
-.homeList {
+.homeWrapList {
   display: flex;
   gap: 10px;
 }
 @media screen and (min-width: 768px) {
-  .homeList {
+  .homeWrapList {
     gap: 15px;
   }
 }
-@media screen and (min-width: 1200px) {
-  .homeList {
+@media screen and (min-width: 1440px) {
+  .homeWrapList {
     gap: 20px;
   }
 }
 
-.homeLink {
+.homeWrapLink {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,8 +78,10 @@
   stroke: grey;
   border-radius: 50%;
 }
-.homeLink:hover {
+.homeWrapLink:hover,
+:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   fill: var(--color-white);
   stroke: var(--color-white);
+  outline: none;
 }

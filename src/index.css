@@ -62,9 +62,9 @@ code {
     width: 768px;
   }
 }
-@media screen and (min-width: 1200px /*от 1200px и выше*/) {
+@media screen and (min-width: 1440px /*от 1200px и выше*/) {
   .container {
-    width: 1200px;
+    width: 1440px;
   }
 }
 

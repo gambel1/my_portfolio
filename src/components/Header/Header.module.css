@@ -7,7 +7,7 @@
     padding: 20px 0;
   }
 }
-@media screen and (min-width: 1200px /*от 480px и выше*/) {
+@media screen and (min-width: 1440px /*от 480px и выше*/) {
   .header {
     padding: 30px 0;
   }
@@ -37,9 +37,9 @@
   color: red;
   outline: none;
 }
-.headerLink:active {
+/* .headerLink:active {
   color: var(--color-active);
-}
+} */
 
 .headerButton {
   border: none;
@@ -78,6 +78,6 @@
   color: var(--color-yellow);
   outline: none;
 }
-.navListItem:active {
+/* .navListItem:active {
   color: var(--color-active);
-}
+} */
