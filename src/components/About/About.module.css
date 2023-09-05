@@ -29,17 +29,17 @@
   }
 }
 
-.aboutWrapImage {
+/* .aboutWrapImage {
   display: none;
 }
 @media screen and (min-width: 768px) {
   .aboutWrapImage {
     display: block;
   }
-}
+} */
 
 .aboutWrapBox {
-  
+  width: 450px;
 }
 @media screen and (min-width: 768px) {
   .aboutWrapBox {

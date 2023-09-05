@@ -14,23 +14,29 @@
 }
 
 .homeWrap {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .homeWrapItem {
-  font-family: var(--Poppins);
-  font-size: 12px;
-  line-height: normal;
-  position: absolute;
-  letter-spacing: 2.4px;
+  display: none;
+}
 
-  right: 0;
-  bottom: 50%;
-  transform: rotate(-90deg);
-  color: var(--color-white);
+@media screen and (min-width: 768px) {
+  .homeWrapItem {
+    display: block;
+    font-family: var(--Poppins);
+    font-size: 12px;
+    line-height: normal;
+    position: absolute;
+    letter-spacing: 2.4px;
+
+    right: 0;
+    bottom: 50%;
+    transform: rotate(-90deg);
+    color: var(--color-white);
+  }
 }
 
 .homeWrapTitle {

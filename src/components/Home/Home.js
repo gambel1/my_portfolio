@@ -14,24 +14,20 @@ export default function Home() {
 
           <div>
             <picture>
-              {/* <source srcSet={`${photo270}`} />
-              <source srcSet={`${photo354}`} media="(min-width: 768px)" />
-              <source srcSet={`${photo450}`} media="(min-width: 1440px)" />
-              <img srcSet={`${photo450}`} alt="myPhoto" /> */}
               <source
-                media="(max-width: 767px)"
-                srcSet={photo450}
-                sizes="450px"
+                media="(min-width: 1440px)"
+                srcSet={`${photo270} 270w`}
+                sizes="270px"
               />
               <source
-                media="min-width: 768px)"
-                srcSet={photo354}
+                media="(min-width: 768px)"
+                srcSet={`${photo354} 354w`}
                 sizes="354px"
               />
               <source
-                media="(min-width: 1440px)"
-                srcSet={photo270}
-                sizes="270px"
+                media="(max-width: 767px)"
+                srcSet={`${photo450} 450w`}
+                sizes="450px"
               />
               <img src={photo270} alt="MyPhoto" />
             </picture>

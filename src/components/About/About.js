@@ -11,19 +11,19 @@ export default function About() {
           <div className={css.aboutWrap}>
             <picture className={css.aboutWrapImage}>
               <source
-                media="(max-width: 767px)"
-                srcSet={technology450}
-                sizes="450px"
+                media="(min-width: 1440px)"
+                srcSet={`${technology270} 270w`}
+                sizes="270px"
               />
               <source
-                media="min-width: 768px)"
-                srcSet={technology354}
+                media="(min-width: 768px)"
+                srcSet={`${technology354} 354w`}
                 sizes="354px"
               />
               <source
-                media="(min-width: 1440px)"
-                srcSet={technology270}
-                sizes="270px"
+                media="(max-width: 767px)"
+                srcSet={`${technology450} 450w`}
+                sizes="450px"
               />
               <img src={technology270} alt="MyPhoto" />
             </picture>
@@ -36,6 +36,9 @@ export default function About() {
                 development. My goal is to gain more experience, work on more
                 complex projects and keep learning.
               </p>
+            </div>
+            <div>
+              <p>SKILLS</p>
             </div>
           </div>
         </div>
