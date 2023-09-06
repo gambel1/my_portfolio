@@ -26,8 +26,8 @@ export default function Home() {
               />
               <source
                 media="(max-width: 767px)"
-                srcSet={`${photo450} 450w`}
-                sizes="450px"
+                srcSet={`${photo450} 400w`}
+                sizes="400px"
               />
               <img src={photo270} alt="MyPhoto" />
             </picture>
