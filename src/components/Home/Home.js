@@ -29,7 +29,7 @@ export default function Home() {
                 srcSet={`${photo450} 400w`}
                 sizes="400px"
               />
-              <img src={photo270} alt="MyPhoto" />
+              <img className={css.homeWrapImg} src={photo270} alt="MyPhoto" />
             </picture>
           </div>
           <h1 className={css.homeWrapTitle}>Alexey Potapenko</h1>
