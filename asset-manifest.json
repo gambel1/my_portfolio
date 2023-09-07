@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/my_portfolio/static/css/main.9545e77c.css",
-    "main.js": "/my_portfolio/static/js/main.dbd67d87.js",
+    "main.css": "/my_portfolio/static/css/main.1296d130.css",
+    "main.js": "/my_portfolio/static/js/main.016d0621.js",
     "static/media/Poppins-Regular.ttf": "/my_portfolio/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
     "static/media/PermanentMarker-Regular.ttf": "/my_portfolio/static/media/PermanentMarker-Regular.109a10dca0508e41aa12.ttf",
     "static/media/cv.pdf": "/my_portfolio/static/media/cv.4e60c3743b7f895f1376.pdf",
     "static/media/technology450.jpg": "/my_portfolio/static/media/technology450.478216e9822276596437.jpg",
-    "static/media/sprite.svg": "/my_portfolio/static/media/sprite.2e0977810040e7381739b4c681f9dba1.svg",
+    "static/media/sprite.svg": "/my_portfolio/static/media/sprite.010f53f927dbffee63f319b93e4b0457.svg",
     "index.html": "/my_portfolio/index.html",
-    "main.9545e77c.css.map": "/my_portfolio/static/css/main.9545e77c.css.map",
-    "main.dbd67d87.js.map": "/my_portfolio/static/js/main.dbd67d87.js.map"
+    "main.1296d130.css.map": "/my_portfolio/static/css/main.1296d130.css.map",
+    "main.016d0621.js.map": "/my_portfolio/static/js/main.016d0621.js.map"
   },
   "entrypoints": [
-    "static/css/main.9545e77c.css",
-    "static/js/main.dbd67d87.js"
+    "static/css/main.1296d130.css",
+    "static/js/main.016d0621.js"
   ]
 }
