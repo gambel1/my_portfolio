@@ -1,4 +1,5 @@
 import css from "../About/About.module.css";
+import sprite from '../../images/sprite.svg'
 import technology270 from "../../images/technology270.jpg";
 import technology354 from "../../images/technology354.jpg";
 import technology450 from "../../images/technology450.jpg";
@@ -37,9 +38,41 @@ export default function About() {
                 complex projects and keep learning.
               </p>
             </div>
-            <div>
-              <p>SKILLS</p>
-            </div>
+          </div>
+          <div>
+            <h2 className={css.aboutSkillsTitle}>SKILLS</h2>
+            <ul className={css.aboutSkillsGrid}>
+              <li className={css.aboutSkillsList}>
+                <svg className={css.aboutSkillsIcon}>
+                  <use href={sprite + "#icon-html"}></use>
+                </svg>
+                HTML
+              </li>
+              <li className={css.aboutSkillsList}>
+                <svg className={css.aboutSkillsIcon}>
+                  <use href={sprite + "#icon-CSS"}></use>
+                </svg>
+                CSS
+              </li>
+              <li className={css.aboutSkillsList}>
+                <svg className={css.aboutSkillsIcon}>
+                  <use href={sprite + "#icon-JavaScript"}></use>
+                </svg>
+                JavaScript
+              </li>
+              <li className={css.aboutSkillsList}>
+                <svg className={css.aboutSkillsIconCurrent}>
+                  <use href={sprite + "#icon-react"}></use>
+                </svg>
+                React
+              </li>
+              <li className={css.aboutSkillsList}>
+                <svg className={css.aboutSkillsIcon}>
+                  <use href={sprite + "#icon-nodejs"}></use>
+                </svg>
+                Node.js
+              </li>
+            </ul>
           </div>
         </div>
       </section>
