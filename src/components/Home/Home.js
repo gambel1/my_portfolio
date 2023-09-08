@@ -77,7 +77,7 @@ export default function Home() {
               <a
                 href={cv}
                 download
-                title="download_cv"
+                title="download_CV"
                 className={css.homeWrapLink}
               >
                 <svg width="25" height="25">
