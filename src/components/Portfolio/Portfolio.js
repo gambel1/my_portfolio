@@ -29,22 +29,22 @@ export default function Portfolio() {
       </SwiperSlide> */}
       <SwiperSlide>
         <a href="https://gambel1.github.io/goit-react-hw-08-phonebook/">
-          <img src={photo450} />
+          <img src={photo450} alt='one'/>
         </a>
       </SwiperSlide>
       <SwiperSlide>
         <a href="https://gambel1.github.io/goit-react-hw-02-feedback/">
-          <img src={technology450} />
+          <img src={technology450} alt='two'/>
         </a>
       </SwiperSlide>
       <SwiperSlide>
         <a href="https://gambel1.github.io/goit-react-hw-03-image-finder/">
-          <img src={backgraund} />
+          <img src={backgraund} alt='three'/>
         </a>
       </SwiperSlide>
       <SwiperSlide>
         <a href="https://gambel1.github.io/goit-react-hw-03-image-finder/">
-          <img src={myPhoto} />
+          <img src={myPhoto} alt='hour'/>
         </a>
       </SwiperSlide>
       ...
