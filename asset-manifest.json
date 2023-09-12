@@ -1,18 +1,20 @@
 {
   "files": {
-    "main.css": "/my_portfolio/static/css/main.56e0d458.css",
-    "main.js": "/my_portfolio/static/js/main.31f7e550.js",
+    "main.css": "/my_portfolio/static/css/main.1589bf6d.css",
+    "main.js": "/my_portfolio/static/js/main.67462634.js",
+    "static/media/backgraundLinkedin.png": "/my_portfolio/static/media/backgraundLinkedin.0c83cc5c8a31d4dfeea5.png",
     "static/media/Poppins-Regular.ttf": "/my_portfolio/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
+    "static/media/myPhoto.jpg": "/my_portfolio/static/media/myPhoto.bc172d710a83c858a9a4.jpg",
     "static/media/PermanentMarker-Regular.ttf": "/my_portfolio/static/media/PermanentMarker-Regular.109a10dca0508e41aa12.ttf",
     "static/media/cv.pdf": "/my_portfolio/static/media/cv.4e60c3743b7f895f1376.pdf",
     "static/media/technology450.jpg": "/my_portfolio/static/media/technology450.478216e9822276596437.jpg",
     "static/media/sprite.svg": "/my_portfolio/static/media/sprite.010f53f927dbffee63f319b93e4b0457.svg",
     "index.html": "/my_portfolio/index.html",
-    "main.56e0d458.css.map": "/my_portfolio/static/css/main.56e0d458.css.map",
-    "main.31f7e550.js.map": "/my_portfolio/static/js/main.31f7e550.js.map"
+    "main.1589bf6d.css.map": "/my_portfolio/static/css/main.1589bf6d.css.map",
+    "main.67462634.js.map": "/my_portfolio/static/js/main.67462634.js.map"
   },
   "entrypoints": [
-    "static/css/main.56e0d458.css",
-    "static/js/main.31f7e550.js"
+    "static/css/main.1589bf6d.css",
+    "static/js/main.67462634.js"
   ]
 }
