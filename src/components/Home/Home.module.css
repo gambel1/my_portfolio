@@ -46,21 +46,31 @@
 
 .homeWrapTitle {
   font-family: var(--PermanentMarker);
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 400;
   line-height: normal;
 
   margin-bottom: 5px;
   color: var(--color-yellow);
 }
+@media screen and (min-width: 1440px) {
+  .homeWrapTitle {
+    font-size: 36px;
+  }
+}
 
 .homeWrapSubtitle {
   font-family: var(--Poppins);
-  font-size: 20px;
+  font-size: 16px;
   line-height: normal;
 
   margin-bottom: 5px;
   color: var(--color-white);
+}
+@media screen and (min-width: 1440px) {
+  .homeWrapSubtitle {
+    font-size: 20px;
+  }
 }
 
 .homeWrapList {
