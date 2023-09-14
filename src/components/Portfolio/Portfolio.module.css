@@ -1,1 +1,23 @@
-.swiper{display: flex;}
+.portfolio {
+  padding: 30px 0;
+  text-align: center;
+  background-color: var(--background-black-color);
+}
+
+.swiper {
+  display: flex;
+}
+
+.portfolioTitle {
+  font-family: var(--Poppins);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 50px;
+  color: var(--color-white);
+}
+@media screen and (min-width: 1440px) {
+  .portfolioTitle {
+    font-size: 30px;
+  }
+}
