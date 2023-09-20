@@ -1,9 +1,10 @@
-import AboutPage from "./pages/AboutPage/AboutPage";
-import ContactPage from "./pages/ContactPage/ContactPage";
-import Layout from "./components/Layout/Layout";
-import PortfolioPage from "./pages/PortfolioPage/PortfolioPage";
-import HomePage from "./pages/HomePage/HomePage";
+import AboutPage from "../pages/AboutPage/AboutPage";
+import ContactPage from "../pages/ContactPage/ContactPage";
+import Layout from "./Layout/Layout";
+import PortfolioPage from "../pages/PortfolioPage/PortfolioPage";
+import HomePage from "../pages/HomePage/HomePage";
 import { Route, Routes } from "react-router-dom";
+
 // import { Suspense } from "react";
 
 export default function App() {

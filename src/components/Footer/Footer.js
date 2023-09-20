@@ -1,13 +1,37 @@
-import styles from "../Footer/Footer.module.css";
 import css from "../Header/Header.module.css";
-import { NavLink } from "react-router-dom";
+import styles from "../Footer/Footer.module.css";
+import { navLinks } from "../NavMenu";
+import { Link, NavLink } from "react-router-dom";
 import classNames from "classnames";
 
 export default function Footer() {
+  const navBar = () => {
+    return (
+      <nav className={(css.nav, styles.footerNav)}>
+        <ul className={css.navList}>
+          {navLinks.map(({ href, text }) => (
+            <li key={href}>
+              <NavLink
+                className={classNames(
+                  css.navListItem,
+                  styles.navListItemCurrent
+                )}
+                to={href}
+              >
+                {text}
+              </NavLink>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    );
+  };
+
   return (
     <footer className={styles.footer}>
       <div className="container">
-        <nav className={(css.nav, styles.footerNav)}>
+        {navBar()}
+        {/* <nav className={(css.nav, styles.footerNav)}>
           <ul className={css.navList}>
             <li>
               <NavLink
@@ -54,7 +78,7 @@ export default function Footer() {
               </NavLink>
             </li>
           </ul>
-        </nav>
+        </nav> */}
 
         <h2 className={styles.footerTitle}>PORTFOLIO</h2>
         <p className={styles.footerSubtitle}>

@@ -41,7 +41,7 @@ export default function Home() {
               <a
                 href="https://github.com/gambel1"
                 target="_blank"
-                rel="noreferrer noopener"
+                
                 className={css.homeWrapLink}
               >
                 <svg width="25" height="25">
