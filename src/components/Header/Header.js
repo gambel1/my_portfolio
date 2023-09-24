@@ -1,18 +1,18 @@
-import css from "../Header/Header.module.css";
-import sprite from "../../images/sprite.svg";
-import { navLinks } from "../NavMenu";
-import { Link, NavLink } from "react-router-dom";
+import css from '../Header/Header.module.css';
+import sprite from '../../images/sprite.svg';
+import { navLinks } from '../NavMenu';
+import PropTypes from 'prop-types';
 
-export default function Header() {
+export default function Header({ click }) {
   const navBar = () => {
     return (
       <nav className={css.nav}>
         <ul className={css.navList}>
-          {navLinks.map(({ href, text }) => (
-            <li key={href}>
-              <NavLink className={css.navListItem} to={href}>
+          {navLinks.map(({ link, text }) => (
+            <li key={link}>
+              <a href={link} onClick={click} className={css.navListItem}>
                 {text}
-              </NavLink>
+              </a>
             </li>
           ))}
         </ul>
@@ -24,41 +24,21 @@ export default function Header() {
     <header className={css.header}>
       <div className="container">
         <div className={css.headerWrap}>
-          <Link to={"/"} className={css.headerLink}>
+          <a href="/#" className={css.headerLink}>
             PORTFOLIO
-          </Link>
+          </a>
           <button className={css.headerButton} type="button">
             <svg width="30" height="30">
-              <use href={sprite + "#icon-hamburger-menu"}></use>
+              <use href={sprite + '#icon-hamburger-menu'}></use>
             </svg>
           </button>
           {navBar()}
-          {/* <nav className={css.nav}>
-          <ul className={css.navList}>
-            <li>
-              <NavLink className={css.navListItem} to={"/"}>
-                HOME
-              </NavLink>
-            </li>
-            <li>
-              <NavLink className={css.navListItem} to={"/about"}>
-                ABOUT
-              </NavLink>
-            </li>
-            <li>
-              <NavLink className={css.navListItem} to={"/portfolio"}>
-                PORTFOLIO
-              </NavLink>
-            </li>
-            <li>
-              <NavLink className={css.navListItem} to={"/contact"}>
-                CONTACT
-              </NavLink>
-            </li>
-          </ul>
-          </nav> */}
         </div>
       </div>
     </header>
   );
 }
+
+Header.propTypes = {
+  click: PropTypes.func,
+};

@@ -1,13 +1,14 @@
-import css from "../Home/Home.module.css";
-import sprite from "../../images/sprite.svg";
-import photo270 from "../../images/photo270.jpg";
-import photo354 from "../../images/photo354.jpg";
-import photo450 from "../../images/photo450.jpg";
-import cv from "../../cv.pdf";
+import css from '../Home/Home.module.css';
+import sprite from '../../images/sprite.svg';
+import photo270 from '../../images/photo270.jpg';
+import photo354 from '../../images/photo354.jpg';
+import photo450 from '../../images/photo450.jpg';
+import cv from '../../cv.pdf';
+import { forwardRef } from 'react';
 
-export default function Home() {
+function Home() {
   return (
-    <section className={css.home}>
+    <section id="sectionHome" className={css.home}>
       <div className="container">
         <div className={css.homeWrap}>
           <p className={css.homeWrapItem}>Full-Stack developer</p>
@@ -41,11 +42,11 @@ export default function Home() {
               <a
                 href="https://github.com/gambel1"
                 target="_blank"
-                
+                rel="noreferrer noopener"
                 className={css.homeWrapLink}
               >
                 <svg width="25" height="25">
-                  <use href={sprite + "#icon-github"}></use>
+                  <use href={sprite + '#icon-github'}></use>
                 </svg>
               </a>
             </li>
@@ -57,7 +58,7 @@ export default function Home() {
                 className={css.homeWrapLink}
               >
                 <svg width="25" height="25">
-                  <use href={sprite + "#icon-linkedin"}></use>
+                  <use href={sprite + '#icon-linkedin'}></use>
                 </svg>
               </a>
             </li>
@@ -69,7 +70,7 @@ export default function Home() {
                 rel="noreferrer noopener"
               >
                 <svg width="25" height="25">
-                  <use href={sprite + "#icon-telegram"}></use>
+                  <use href={sprite + '#icon-telegram'}></use>
                 </svg>
               </a>
             </li>
@@ -81,13 +82,21 @@ export default function Home() {
                 className={css.homeWrapLink}
               >
                 <svg width="25" height="25">
-                  <use href={sprite + "#icon-cv"}></use>
+                  <use href={sprite + '#icon-cv'}></use>
                 </svg>
               </a>
             </li>
           </ul>
+          {/* <button className={css.homeWrapButton} type="button">
+            <svg width="25" height="25">
+              <use href={sprite + '#icon-cv'}></use>
+            </svg>
+            Download CV
+          </button> */}
         </div>
       </div>
     </section>
   );
 }
+
+export default forwardRef(Home);

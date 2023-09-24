@@ -1,45 +1,57 @@
-import css from "../Portfolio/Portfolio.module.css";
-import imageFinder from "../../images/imageFinder.jpg";
-import mimino from "../../images/mimino.jpg";
-import movies from "../../images/movies.jpg";
-import news from "../../images/news.jpg";
-import phonebook from "../../images/phonebook.jpg";
-import taskPro from "../../images/taskPro.jpg";
-import test from "../../images/test.jpg";
-import webstudio from "../../images/webstudio.jpg";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Scrollbar } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
-import "swiper/css/effect-fade";
+import css from '../Portfolio/Portfolio.module.css';
+import imageFinder from '../../images/imageFinder.jpg';
+import mimino from '../../images/mimino.jpg';
+import movies from '../../images/movies.jpg';
+import news from '../../images/news.jpg';
+import phonebook from '../../images/phonebook.jpg';
+import taskPro from '../../images/taskPro.jpg';
+import test from '../../images/test.jpg';
+import webstudio from '../../images/webstudio.jpg';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  EffectCoverflow,
+} from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
+import 'swiper/css/effect-coverflow';
 
 export default function Portfolio() {
   return (
-    <section className={css.portfolio}>
+    <section id="sectionPortfolio" className={css.portfolio}>
       <div className="container">
-        <h1 className={css.portfolioTitle}>MY WORKS</h1>
+        <h2 className={css.portfolioTitle}>MY WORKS</h2>
         <Swiper
-          modules={[Navigation, Pagination, Scrollbar]}
-          navigation
+          modules={[Navigation, Pagination, Scrollbar, EffectCoverflow]}
+          effect={'coverFlow'}
+          grabCursor={true}
           pagination={{ clickable: true }}
+          navigation={{
+            prevEl: '.swiper-button-prev',
+            nextEl: '.swiper-button-next',
+            clickable: true,
+          }}
           scrollbar={{ draggable: true }}
-          className={css.swiper}
-          spaceBetween={50}
-          slidesPerView={3}
-          onSlideChange={() => console.log("slide change")}
-          onSwiper={(swiper) => console.log(swiper)}
+          preventClicks={true}
+          rewind={true}
+          breakpoints={{
+            // when window width is >= 576px
+            0: { spaceBetween: 30, slidesPerView: 1 },
+            // when window width is >= 768px
+            768: { spaceBetween: 40, slidesPerView: 2 },
+            // when window width is >= 1024px
+            1440: {
+              spaceBetween: 50,
+              slidesPerView: 3,
+            },
+          }}
+          className="swiper_container"
         >
-          <SwiperSlide>
-            <a
-              href="https://gambel1.github.io/goit-markup-hw-08/index.html"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              <img src={webstudio} alt="Webstudio" />
-            </a>
-          </SwiperSlide>
           <SwiperSlide>
             <a
               href="https://gambel1.github.io/mimino-project-13/"
@@ -49,6 +61,16 @@ export default function Portfolio() {
               <img src={mimino} alt="Mimino restaurant" />
             </a>
           </SwiperSlide>
+          <SwiperSlide>
+            <a
+              href="https://gambel1.github.io/goit-markup-hw-08/index.html"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <img src={webstudio} alt="Webstudio" />
+            </a>
+          </SwiperSlide>
+
           <SwiperSlide>
             <a
               href="https://gambel1.github.io/news-site/"
@@ -103,7 +125,8 @@ export default function Portfolio() {
               <img src={taskPro} alt="Task Pro application" />
             </a>
           </SwiperSlide>
-          ...
+          <div className="swiper-button-prev"></div>
+          <div className="swiper-button-next"></div>
         </Swiper>
       </div>
     </section>

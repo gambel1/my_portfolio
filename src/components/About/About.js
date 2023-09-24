@@ -1,13 +1,13 @@
-import css from "../About/About.module.css";
-import sprite from '../../images/sprite.svg'
-import technology270 from "../../images/technology270.jpg";
-import technology354 from "../../images/technology354.jpg";
-import technology450 from "../../images/technology450.jpg";
+import css from '../About/About.module.css';
+import sprite from '../../images/sprite.svg';
+import technology270 from '../../images/technology270.jpg';
+import technology354 from '../../images/technology354.jpg';
+import technology450 from '../../images/technology450.jpg';
 
 export default function About() {
   return (
     <>
-      <section className={css.about}>
+      <section id="sectionAbout" className={css.about}>
         <div className="container">
           <div className={css.aboutWrap}>
             <picture className={css.aboutWrapImage}>
@@ -29,7 +29,7 @@ export default function About() {
               <img src={technology270} alt="MyPhoto" />
             </picture>
             <div className={css.aboutWrapBox}>
-              <h1 className={css.aboutWrapBoxTitle}>Alexey Potapenko</h1>
+              <h2 className={css.aboutWrapBoxTitle}>Alexey Potapenko</h2>
               <p className={css.aboutWrapBoxItem}>
                 Junior Full Stack developer, interested in both front-end and
                 back-end development, software development. The main feature is
@@ -40,35 +40,35 @@ export default function About() {
             </div>
           </div>
           <div>
-            <h2 className={css.aboutSkillsTitle}>SKILLS</h2>
+            <h3 className={css.aboutSkillsTitle}>SKILLS</h3>
             <ul className={css.aboutSkillsGrid}>
               <li className={css.aboutSkillsList}>
                 <svg className={css.aboutSkillsIcon}>
-                  <use href={sprite + "#icon-html"}></use>
+                  <use href={sprite + '#icon-html'}></use>
                 </svg>
                 HTML
               </li>
               <li className={css.aboutSkillsList}>
                 <svg className={css.aboutSkillsIcon}>
-                  <use href={sprite + "#icon-CSS"}></use>
+                  <use href={sprite + '#icon-CSS'}></use>
                 </svg>
                 CSS
               </li>
               <li className={css.aboutSkillsList}>
                 <svg className={css.aboutSkillsIcon}>
-                  <use href={sprite + "#icon-JavaScript"}></use>
+                  <use href={sprite + '#icon-JavaScript'}></use>
                 </svg>
                 JavaScript
               </li>
               <li className={css.aboutSkillsList}>
                 <svg className={css.aboutSkillsIconCurrent}>
-                  <use href={sprite + "#icon-react"}></use>
+                  <use href={sprite + '#icon-react'}></use>
                 </svg>
                 React
               </li>
               <li className={css.aboutSkillsList}>
                 <svg className={css.aboutSkillsIcon}>
-                  <use href={sprite + "#icon-nodejs"}></use>
+                  <use href={sprite + '#icon-nodejs'}></use>
                 </svg>
                 Node.js
               </li>
@@ -79,3 +79,4 @@ export default function About() {
     </>
   );
 }
+
