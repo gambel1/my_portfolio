@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my_portfolio/static/css/main.94a706eb.css",
-    "main.js": "/my_portfolio/static/js/main.24d8e2d4.js",
+    "main.css": "/my_portfolio/static/css/main.93014929.css",
+    "main.js": "/my_portfolio/static/js/main.ac494988.js",
     "static/media/imageFinder.jpg": "/my_portfolio/static/media/imageFinder.84a967574a2e12f8462c.jpg",
     "static/media/Poppins-Regular.ttf": "/my_portfolio/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
     "static/media/mimino.jpg": "/my_portfolio/static/media/mimino.635feb39e614e49a03a3.jpg",
@@ -13,14 +13,14 @@
     "static/media/cv.pdf": "/my_portfolio/static/media/cv.4e60c3743b7f895f1376.pdf",
     "static/media/taskPro.jpg": "/my_portfolio/static/media/taskPro.8d4c8e90eefd0b5bcd23.jpg",
     "static/media/phonebook.jpg": "/my_portfolio/static/media/phonebook.66aff2fa91d4c6c1b4f8.jpg",
+    "static/media/sprite.svg": "/my_portfolio/static/media/sprite.bc50dfb69789f21c2a70971ac067f4b4.svg",
     "static/media/technology450.jpg": "/my_portfolio/static/media/technology450.478216e9822276596437.jpg",
-    "static/media/sprite.svg": "/my_portfolio/static/media/sprite.7ea0ab5dd66eb16fc38699cfe271a59a.svg",
     "index.html": "/my_portfolio/index.html",
-    "main.94a706eb.css.map": "/my_portfolio/static/css/main.94a706eb.css.map",
-    "main.24d8e2d4.js.map": "/my_portfolio/static/js/main.24d8e2d4.js.map"
+    "main.93014929.css.map": "/my_portfolio/static/css/main.93014929.css.map",
+    "main.ac494988.js.map": "/my_portfolio/static/js/main.ac494988.js.map"
   },
   "entrypoints": [
-    "static/css/main.94a706eb.css",
-    "static/js/main.24d8e2d4.js"
+    "static/css/main.93014929.css",
+    "static/js/main.ac494988.js"
   ]
 }
