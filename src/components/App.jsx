@@ -4,10 +4,10 @@ import Header from './Header/Header';
 import Home from './Home/Home';
 import Portfolio from './Portfolio/Portfolio';
 import Footer from './Footer/Footer';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 
 export default function App() {
-  const ref = useRef(null);
+    const ref = useRef(null);
 
   const handleClick = () => {
     ref.current?.scrollIntoView({ behavior: 'smooth' });
@@ -17,6 +17,7 @@ export default function App() {
   return (
     <>
       <Header click={handleClick} />
+      
       <main>
         <Home />
         <About />

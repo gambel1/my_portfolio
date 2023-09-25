@@ -1,9 +1,17 @@
 import css from '../Header/Header.module.css';
+import Modal from 'components/Modal/Modal';
 import sprite from '../../images/sprite.svg';
 import { navLinks } from '../NavMenu';
+import { useState } from 'react';
 import PropTypes from 'prop-types';
 
 export default function Header({ click }) {
+  const [modalActive, setModalActive] = useState(false);
+
+  const handleClickBurger = () => {
+    setModalActive(true);
+  };
+
   const navBar = () => {
     return (
       <nav className={css.nav}>
@@ -27,7 +35,11 @@ export default function Header({ click }) {
           <a href="/#" className={css.headerLink}>
             PORTFOLIO
           </a>
-          <button className={css.headerButton} type="button">
+          <button
+            onClick={handleClickBurger}
+            className={css.headerButton}
+            type="button"
+          >
             <svg width="30" height="30">
               <use href={sprite + '#icon-hamburger-menu'}></use>
             </svg>
@@ -35,6 +47,7 @@ export default function Header({ click }) {
           {navBar()}
         </div>
       </div>
+      <Modal active={modalActive} setActive={setModalActive} />
     </header>
   );
 }
