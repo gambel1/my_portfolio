@@ -1,17 +1,18 @@
 import css from '../../components/Modal/Modal.module.css';
 import sprite from '../../images/sprite.svg';
-// import { createPortal } from 'react-dom';
+import { createPortal } from 'react-dom';
 
-// const modalRoot = document.querySelector('#modal-root');
+const modalRoot = document.querySelector('#modal-root');
 
 export default function Modal({ active, setActive }) {
   const handleClickModal = () => {
     setActive(false);
   };
 
-  return (
+  return createPortal(
     <div className="container">
-      <div className={active ? css.modalActive : css.backdrop}>
+      {/* <div className={active ? css.modalActive : css.backdrop}> */}
+      <div className={css.backdrop} onClick={handleClickModal}>
         <div className={css.modal}>
           <button
             onClick={handleClickModal}
@@ -22,10 +23,11 @@ export default function Modal({ active, setActive }) {
               <use href={sprite + '#icon-close'}></use>
             </svg>
           </button>
-          <h2>Modal</h2>
+          <h2 style={{textAlign:'center'}}>Modal</h2>
         </div>
+
       </div>
-    </div>
-    // modalRoot
+    </div>,
+    modalRoot
   );
 }
