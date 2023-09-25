@@ -1,6 +1,7 @@
 import css from '../../components/Modal/Modal.module.css';
 import Contacts from 'components/Contacts/Contacts';
 import sprite from '../../images/sprite.svg';
+import cv from '../../cv.pdf';
 import { createPortal } from 'react-dom';
 
 const modalRoot = document.querySelector('#modal-root');
@@ -23,41 +24,56 @@ export default function Modal({ setActive }) {
               <use href={sprite + '#icon-close'}></use>
             </svg>
           </button>
-          <h2>Modal</h2>
           <Contacts />
-          {/* <ul>
-            <li className={css.listBox}>
-              <h4 className={css.listSubtitle}>Location</h4>
-              <p className={css.listItem}>
-                <svg width="22" height="24">
-                  <use href={sprite + '#icon-location'}></use>
-                </svg>
-                Kyiv, Ukraine
-              </p>
-            </li>
-            <li className={css.listBox}>
-              <h4 className={css.listSubtitle}>Telegram / Contact number</h4>
+          <ul className={css.modalWrapList}>
+            <li>
               <a
-                className={css.listLink}
-                href="tel:+380960164016"
+                href="https://github.com/gambel1"
+                target="_blank"
+                rel="noreferrer noopener"
+                className={css.modalWrapLink}
+              >
+                <svg width="25" height="25">
+                  <use href={sprite + '#icon-github'}></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/alexpotapenko/"
+                target="_blank"
+                rel="noreferrer noopener"
+                className={css.modalWrapLink}
+              >
+                <svg width="25" height="25">
+                  <use href={sprite + '#icon-linkedin'}></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://t.me/gambel123"
+                className={css.modalWrapLink}
+                target="_blank"
                 rel="noreferrer noopener"
               >
-                <svg style={{ marginRight: '5px' }} width="12" height="17">
-                  <use href={sprite + '#icon-tel'}></use>
+                <svg width="25" height="25">
+                  <use href={sprite + '#icon-telegram'}></use>
                 </svg>
-                096 016 4 016
               </a>
             </li>
-            <li className={css.listBox}>
-              <h4 className={css.listSubtitle}>Email</h4>
-              <a className={css.listLink} href="mailto:electrifyx@gmail.com">
-                <svg style={{ marginRight: '5px' }} width="16" height="12">
-                  <use href={sprite + '#icon-mail'}></use>
-                </svg>
-                electrifyx@gmail.com
-              </a>
-            </li>
-          </ul> */}
+          </ul>
+          <a
+            className={css.modalWrapButton}
+            href={cv}
+            download
+            title="download_CV"
+          >
+            <svg width="25" height="25">
+              <use href={sprite + '#icon-cv'}></use>
+            </svg>
+            Download CV
+          </a>
         </div>
       </div>
     </div>,

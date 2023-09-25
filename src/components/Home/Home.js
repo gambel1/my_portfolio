@@ -87,12 +87,6 @@ function Home() {
               </a>
             </li>
           </ul>
-          {/* <button className={css.homeWrapButton} type="button">
-            <svg width="25" height="25">
-              <use href={sprite + '#icon-cv'}></use>
-            </svg>
-            Download CV
-          </button> */}
         </div>
       </div>
     </section>

@@ -23,7 +23,7 @@
   height: 609px;
   padding: 40px;
 
-  background-color: #000;
+  background-color: var(--background-black-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -40,11 +40,66 @@
   right: 15px;
   border: none;
   cursor: pointer;
-  background-color: var(--color-white);
+  fill: var(--color-white);
+  stroke: rgba(255, 255, 255, 0.6);
+  background-color: var(--background-black-color);
 }
-.modalButton:hover,
+/* .modalButton:hover,
 .modalButton:focus {
   fill: var(--color-yellow);
   stroke: none;
   box-shadow: none;
+} */
+
+/* Icons */
+
+.modalWrapList {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.modalWrapLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+
+  fill: grey;
+  stroke: grey;
+  border-radius: 50%;
+}
+.modalWrapLink:hover,
+:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  fill: var(--color-white);
+  stroke: var(--color-white);
+  outline: none;
+}
+
+/* Button_cv */
+
+.modalWrapButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+
+  gap: 5px;
+  padding: 10px 15px;
+  margin-left: auto;
+  margin-right: auto;
+  
+  border-radius: 5px;
+  border: none;
+  color: var(--background-black-color);
+  background-color: grey;
+}
+.modalWrapButton:hover,
+.modalWrapButton:focus {
+  fill: var(--color-white);
+  stroke: var(--color-white);
+  color: var(--color-white);
 }
