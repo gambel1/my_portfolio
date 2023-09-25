@@ -10,7 +10,6 @@ export default function Header({ click }) {
 
   const handleClickBurger = () => {
     setModalActive(true);
-    console.log('click');
   };
 
   const navBar = () => {
@@ -40,12 +39,12 @@ export default function Header({ click }) {
             onClick={handleClickBurger}
             className={css.headerButton}
             type="button"
-            >
+          >
             <svg width="30" height="30">
               <use href={sprite + '#icon-hamburger-menu'}></use>
             </svg>
           </button>
-            {modalActive && <Modal setActive={setModalActive} />}
+          {modalActive && <Modal setActive={setModalActive} />}
           {navBar()}
         </div>
       </div>

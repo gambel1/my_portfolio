@@ -1,11 +1,11 @@
 import css from '../Contacts/Contacts.module.css';
 import sprite from '../../images/sprite.svg';
 
-export default function Contacts() {
+export default function Contacts({ title }) {
   return (
-    <section id='sectionContacts' className={css.contact}>
+    <section id="sectionContacts" className={css.contact}>
       <div className="container">
-        <h3 className={css.contactTitle}>CONTACTS</h3>
+        <h3 className={css.contactTitle}>{<Contacts /> ? title : null}</h3>
         <ul>
           <li className={css.listBox}>
             <h4 className={css.listSubtitle}>Location</h4>
