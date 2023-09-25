@@ -24,7 +24,7 @@ export default function Modal({ setActive }) {
               <use href={sprite + '#icon-close'}></use>
             </svg>
           </button>
-          <h2 className={css.modalTitle}>Welcome in modal</h2>
+          <h2 className={css.modalTitle}>Welcome to modal</h2>
           <Contacts />
           <ul className={css.modalWrapList}>
             <li>
