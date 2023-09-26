@@ -4,6 +4,8 @@ import mimino from '../../images/mimino.jpg';
 import movies from '../../images/movies.jpg';
 import news from '../../images/news.jpg';
 import phonebook from '../../images/phonebook.jpg';
+import portfolio from '../../images/portfolio.jpg';
+
 import taskPro from '../../images/taskPro.jpg';
 import test from '../../images/test.jpg';
 import webstudio from '../../images/webstudio.jpg';
@@ -54,20 +56,30 @@ export default function Portfolio() {
         >
           <SwiperSlide>
             <a
-              href="https://gambel1.github.io/mimino-project-13/"
+              href="https://gambel1.github.io/goit-react-hw-04-images/"
               target="_blank"
               rel="noreferrer noopener"
             >
-              <img src={mimino} alt="Mimino restaurant" />
+              <img src={imageFinder} alt="PictureFinder" />
+            </a>
+          </SwiperSlide>
+
+          <SwiperSlide>
+            <a
+              href="https://gambel1.github.io/goit-react-hw-05-movies/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <img src={movies} alt="Movies finder" />
             </a>
           </SwiperSlide>
           <SwiperSlide>
             <a
-              href="https://gambel1.github.io/goit-markup-hw-08/index.html"
+              href="https://gambel1.github.io/taskProjectFront/"
               target="_blank"
               rel="noreferrer noopener"
             >
-              <img src={webstudio} alt="Webstudio" />
+              <img src={taskPro} alt="Task Pro application" />
             </a>
           </SwiperSlide>
 
@@ -80,24 +92,7 @@ export default function Portfolio() {
               <img src={news} alt="News site" />
             </a>
           </SwiperSlide>
-          <SwiperSlide>
-            <a
-              href="https://gambel1.github.io/goit-react-hw-04-images/"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              <img src={imageFinder} alt="PictureFinder" />
-            </a>
-          </SwiperSlide>
-          <SwiperSlide>
-            <a
-              href="https://gambel1.github.io/goit-react-hw-05-movies/"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              <img src={movies} alt="Movies finder" />
-            </a>
-          </SwiperSlide>
+
           <SwiperSlide>
             <a
               href="https://gambel1.github.io/goit-react-hw-08-phonebook/"
@@ -118,13 +113,32 @@ export default function Portfolio() {
           </SwiperSlide>
           <SwiperSlide>
             <a
-              href="https://gambel1.github.io/taskProjectFront/"
+              href="https://gambel1.github.io/goit-react-hw-04-images/"
               target="_blank"
               rel="noreferrer noopener"
             >
-              <img src={taskPro} alt="Task Pro application" />
+              <img src={portfolio} alt="no" />
             </a>
           </SwiperSlide>
+          <SwiperSlide>
+            <a
+              href="https://gambel1.github.io/mimino-project-13/"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <img src={mimino} alt="Mimino restaurant" />
+            </a>
+          </SwiperSlide>
+          <SwiperSlide>
+            <a
+              href="https://gambel1.github.io/goit-markup-hw-08/index.html"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <img src={webstudio} alt="Webstudio" />
+            </a>
+          </SwiperSlide>
+
           <div className="swiper-button-prev"></div>
           <div className="swiper-button-next"></div>
         </Swiper>
