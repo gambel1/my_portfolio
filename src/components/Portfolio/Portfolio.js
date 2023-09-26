@@ -113,11 +113,11 @@ export default function Portfolio() {
           </SwiperSlide>
           <SwiperSlide>
             <a
-              href="https://gambel1.github.io/goit-react-hw-04-images/"
+              href="https://gambel1.github.io/my_portfolio/"
               target="_blank"
               rel="noreferrer noopener"
             >
-              <img src={portfolio} alt="no" />
+              <img src={portfolio} alt="Portfolio" />
             </a>
           </SwiperSlide>
           <SwiperSlide>
