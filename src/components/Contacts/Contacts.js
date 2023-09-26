@@ -1,5 +1,6 @@
 import css from '../Contacts/Contacts.module.css';
 import sprite from '../../images/sprite.svg';
+import PropTypes from 'prop-types';
 
 export default function Contacts({ title }) {
   return (
@@ -43,3 +44,7 @@ export default function Contacts({ title }) {
     </section>
   );
 }
+
+Contacts.propTypes = {
+  title: PropTypes.string,
+};

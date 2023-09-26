@@ -1,5 +1,6 @@
 import css from '../Header/Header.module.css';
 import Modal from 'components/Modal/Modal';
+
 import sprite from '../../images/sprite.svg';
 import { navLinks } from '../NavMenu';
 import { useState } from 'react';
@@ -35,6 +36,7 @@ export default function Header({ click }) {
           <a href="/#" className={css.headerLink}>
             PORTFOLIO
           </a>
+
           <button
             onClick={handleClickBurger}
             className={css.headerButton}
@@ -44,11 +46,11 @@ export default function Header({ click }) {
               <use href={sprite + '#icon-hamburger-menu'}></use>
             </svg>
           </button>
+
           {modalActive && <Modal setActive={setModalActive} />}
           {navBar()}
         </div>
       </div>
-      {/* <Modal active={modalActive} setActive={setModalActive} /> */}
     </header>
   );
 }
