@@ -33,7 +33,7 @@ export default function Header({ click }) {
     <header className={css.header}>
       <div className="container">
         <div className={css.headerWrap}>
-          <a href="/#" className={css.headerLink}>
+          <a href="#sectionPortfolio" className={css.headerLink}>
             PORTFOLIO
           </a>
 
