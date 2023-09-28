@@ -29,6 +29,7 @@
   --color-active: green;
   --input-color: rgba(255, 255, 255, 0.25);
   --secondary-color: rgba(0, 0, 0, 0.5);
+  --color-grey: grey;
 }
 
 html {

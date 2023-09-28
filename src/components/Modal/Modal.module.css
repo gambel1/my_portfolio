@@ -78,8 +78,8 @@
   width: 44px;
   height: 44px;
 
-  fill: grey;
-  stroke: grey;
+  fill: var(--color-grey);
+  stroke: var(--color-grey);
   border-radius: 50%;
 }
 .modalWrapLink:hover,
@@ -106,7 +106,7 @@
   border-radius: 5px;
   border: none;
   color: var(--background-black-color);
-  background-color: grey;
+  background-color: var(--color-grey);
 }
 .modalWrapButton:hover,
 .modalWrapButton:focus {
