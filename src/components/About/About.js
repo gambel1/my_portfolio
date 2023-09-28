@@ -10,7 +10,7 @@ export default function About() {
       <section id="sectionAbout" className={css.about}>
         <div className="container">
           <div className={css.aboutWrap}>
-            <picture className={css.aboutWrapImage}>
+            <picture>
               <source
                 media="(min-width: 1440px)"
                 srcSet={`${technology270} 270w`}
