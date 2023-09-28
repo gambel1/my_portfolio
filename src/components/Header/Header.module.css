@@ -41,6 +41,12 @@
     display: none;
   }
 }
+.headerButton:hover,
+.headerButton:focus,
+.headerButton:active {
+  fill: var(--color-yellow);
+  stroke: var(--color-yellow);
+ }
 
 /* navigations */
 
