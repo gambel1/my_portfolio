@@ -114,6 +114,7 @@
   align-items: center;
   width: calc((100% - 30px) / 2);
   border: solid 1px #3e3c3c;
+  box-shadow: 0 1px 4px 0 var(--color-yellow);
   border-radius: 5px;
   padding-bottom: 5px;
   color: var(--color-white);
